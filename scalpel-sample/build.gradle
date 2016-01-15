@@ -1,32 +1,38 @@
-buildscript {
-  dependencies {
-    classpath 'com.android.tools.build:gradle:0.9.+'
-  }
-}
+apply plugin: 'com.android.application'
 
-apply plugin: 'android'
-
-dependencies {
-  compile project(':scalpel')
-  compile 'com.jakewharton:butterknife:4.0.+'
-  compile 'com.squareup.picasso:picasso:2.1.+'
-  compile 'com.android.support:support-v4:19.0.+'
-}
 
 android {
-  compileSdkVersion 19
-  buildToolsVersion "19.0.3"
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
 
-  defaultConfig {
-    versionName VERSION_NAME
-  }
+    defaultConfig {
+        versionName VERSION_NAME
+    }
 
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_7
-    targetCompatibility JavaVersion.VERSION_1_7
-  }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
 
-  lintOptions {
-    abortOnError false
-  }
+    lintOptions {
+        abortOnError false
+    }
 }
+
+
+buildscript {
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+    }
+}
+
+
+
+dependencies {
+    compile project(':scalpel')
+    compile 'com.jakewharton:butterknife:4.0.+'
+    compile 'com.squareup.picasso:picasso:2.1.+'
+    compile 'com.android.support:support-v4:19.0.+'
+}
+
+

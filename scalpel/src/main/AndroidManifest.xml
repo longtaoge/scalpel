@@ -1,11 +1,9 @@
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jakewharton.scalpel"
-    android:versionCode="1"
-    >
+    android:versionCode="1">
 
-  <uses-sdk android:minSdkVersion="14"/>
+    <uses-sdk android:minSdkVersion="14" />
 
-  <application/>
+    <application />
 
 </manifest>

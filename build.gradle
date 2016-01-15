@@ -1,17 +1,16 @@
+apply plugin: 'maven'
+
 allprojects {
-  buildscript {
-    repositories {
-      mavenCentral()
+    buildscript {
+        repositories {
+            mavenCentral()
+        }
     }
-  }
-  dependencies {
-    repositories {
-      mavenCentral()
+    dependencies {
+        repositories {
+            mavenCentral()
+        }
     }
-  }
 
-  group = GROUP
-  version = VERSION_NAME
 
-  apply plugin: 'maven'
 }
